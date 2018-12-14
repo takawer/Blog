@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html >
 <html>
 <head>
 <link rel="ICON" href="imagens/logo.jpg" type="image/ico" />
@@ -8,17 +8,35 @@
 <link href="css/style.css" rel="stylesheet">
 <title>Login</title>
 </head>
-<body>
-	  <form class="baseForm" action="login" method="post">
-             <label class="formLabel">
-                 Nome de Usuário:
-                 <input name="emailUsuario" type="text" required class="formInput formTextInput">
+<body style = "margin:0">
+
+<div class="topnav">
+    <a href="index.jsp">Home</a>
+    <a href="cadastrar.jsp">Cadastrar</a>
+    <a class="active" href="login.jsp">Login</a>
+    
+</div>
+<section id="conteúdo" class="main">
+<div class="row">
+   
+         <h2><b>Login</b></h2>
+         <form class="baseForm" action="login" method="post">
+             <p><label class="formLabel"></p>
+                 Email:
+                 <input name="email" type="mail" required class="formInput formTextInput">
              </label>
-             <label class="formLabel">
+             <p><label class="formLabel"></p>
                  Senha:
-                 <input name="senhaUsuario" type="password" required class="formInput formTextInput">
+                 <input name="senha" type="password" required class="formInput formTextInput">
              </label>
-             <input type="submit" value="Entrar" class="submitButton">
+             <p><input type="submit" value="Login" class="submitButton"></p>
          </form>
-</body>
+    
+</div>
+</section>
+         
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>

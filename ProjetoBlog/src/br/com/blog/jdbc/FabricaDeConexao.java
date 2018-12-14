@@ -16,9 +16,11 @@ public class FabricaDeConexao {
 		}
         try {
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost/blog?useTimezone=true&serverTimezone=UTC&useSSL=false", "root", "12611");
+                    "jdbc:mysql://localhost/testeb","root","12611");
         } catch (SQLException e) {
             throw new RuntimeException(e);
+           
+            
         }
     }
 }

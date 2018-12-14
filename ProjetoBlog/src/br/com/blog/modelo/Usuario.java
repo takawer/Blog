@@ -10,7 +10,6 @@ public class Usuario {
 	private String nome;
 	private String email;
 	private String senha;
-	private int idGrupo;
 	private String apelido;
 	
 	
@@ -38,12 +37,8 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public int getIdGrupo() {
-		return idGrupo;
-	}
-	public void setIdGrupo(int idGrupo) {
-		this.idGrupo = idGrupo;
-	}
+	
+
 	public String getApelido() {
 		return apelido;
 	}
